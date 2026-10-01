@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BRRaYa — Applications mobiles iOS et Android</title>
+<meta name="description" content="BRRaYa conçoit et développe des applications mobiles iOS et Android avec React Native et Expo." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%231f6feb'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>B</text></svg>" />
+<style>
+:root {
+--bg: #f7f7f5;
+--surface: #ffffff;
+--text: #111111;
+--muted: #5c5c58;
+--border: #e6e5e1;
+--accent: #1f6feb;
+--accent-soft: #e8f0fe;
+}
+@media (prefers-color-scheme: dark) {
+:root {
+--bg: #111111;
+--surface: #1a1a19;
+--text: #f5f5f4;
+--muted: #b4b3ab;
+--border: #2e2e2b;
+--accent: #4c8ff0;
+--accent-soft: #1a2638;
+}
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+background: var(--bg);
+color: var(--text);
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+line-height: 1.6;
+}
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+header { padding: 20px 0; border-bottom: 1px solid var(--border); background: var(--surface); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.01em; }
+.mark { width: 32px; height: 32px; border-radius: 9px; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 800; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 0.95rem; }
+nav a:hover { color: var(--text); }
+.hero { padding: 72px 0 56px; }
+.eyebrow { display: inline-block; background: var(--accent-soft); color: var(--accent); font-weight: 600; font-size: 0.85rem; padding: 4px 12px; border-radius: 999px; }
+h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.12; letter-spacing: -0.025em; margin: 16px 0 14px; }
+.lead { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 0; }
+.en { color: var(--muted); font-size: 0.95rem; margin-top: 10px; }
+section { padding: 40px 0; }
+h2 { font-size: 1.4rem; letter-spacing: -0.01em; margin: 0 0 18px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+.card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { border: 1px solid var(--border); background: var(--surface); border-radius: 999px; padding: 6px 14px; font-size: 0.9rem; }
+.contact { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+.btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 10px 18px; border-radius: 10px; margin-top: 8px; }
+footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 560px) { nav { display: none; } .hero { padding: 48px 0 36px; } }
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="brand"><span class="mark" aria-hidden="true">B</span>BRRaYa</div>
+<nav aria-label="Navigation">
+<a href="#services">Services</a>
+<a href="#technologies">Technologies</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<div class="wrap hero">
+<span class="eyebrow">Développement d'applications mobiles</span>
+<h1>Des applications iOS et Android, conçues et développées avec soin.</h1>
+<p class="lead">
+BRRaYa conçoit, développe et publie des applications mobiles pour iPhone et Android,
+de l'idée jusqu'à la mise en ligne sur l'App Store et Google Play.
+</p>
+<p class="en">BRRaYa designs, builds and publishes mobile apps for iOS and Android.</p>
+</div>
+<section id="services">
+<div class="wrap">
+<h2>Services</h2>
+<div class="grid">
+<div class="card">
+<h3>Applications iOS et Android</h3>
+<p>Une seule base de code pour iPhone et Android, avec une expérience native et fluide.</p>
+</div>
+<div class="card">
+<h3>Publication sur les stores</h3>
+<p>Préparation, soumission et suivi des applications sur l'App Store et Google Play.</p>
+</div>
+<div class="card">
+<h3>Maintenance et évolutions</h3>
+<p>Mises à jour, corrections et nouvelles fonctionnalités après le lancement.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="technologies">
+<div class="wrap">
+<h2>Technologies</h2>
+<div class="tags">
+<span class="tag">React Native</span>
+<span class="tag">Expo</span>
+<span class="tag">TypeScript</span>
+<span class="tag">iOS</span>
+<span class="tag">Android</span>
+<span class="tag">.NET / ASP.NET Core</span>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="wrap">
+<div class="contact">
+<h2>Contact</h2>
+<p class="lead" style="font-size:1rem">Un projet d'application ? Écrivez-nous. · Have an app project? Get in touch.</p>
+<a class="btn" href="https://github.com/badre-eddine127" rel="noopener">Nous contacter via GitHub</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">© <span id="year">2026</span> BRRaYa · Développement d'applications mobiles</div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
